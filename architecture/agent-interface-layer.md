@@ -1,5 +1,7 @@
 # Agent Interface Layer
 
+> Evidence boundary: this doc describes verified public agent-facing behavior and avoids claiming private implementation details beyond what the public proof surfaces support.
+
 ## Goal
 
 Make a website usable by agents without forcing them to screen-scrape the interface.

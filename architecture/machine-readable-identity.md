@@ -1,5 +1,7 @@
 # Machine-Readable Identity
 
+> Evidence boundary: verified claims in this document come from public metadata, discovery files, and public pages. Internal data plumbing is not asserted here unless marked inferred elsewhere.
+
 ## Definition
 
 Machine-readable identity is the layer that lets search engines and AI systems understand who a site belongs to, what topics it covers, and where its authority is concentrated.

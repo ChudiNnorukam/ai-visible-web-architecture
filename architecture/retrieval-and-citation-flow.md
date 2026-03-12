@@ -1,5 +1,7 @@
 # Retrieval and Citation Flow
 
+> Evidence boundary: this doc explains the observable retrieval pattern using public site surfaces and does not claim access to private ranking or application internals.
+
 ## Goal
 
 Explain how an AI-visible website moves from a user question to an attributable answer.
