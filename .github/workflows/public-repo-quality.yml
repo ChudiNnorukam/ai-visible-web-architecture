@@ -1,0 +1,54 @@
+name: public-repo-quality
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile Python scripts
+        run: python3 -m py_compile scripts/*.py
+
+      - name: Run repository quality checks
+        run: python3 scripts/check_repo_quality.py
+
+      - name: Run live audit
+        run: |
+          mkdir -p artifacts
+          python3 scripts/audit_live_surfaces.py --json-out artifacts/live-audit.json
+
+      - name: Upload live audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-audit
+          path: artifacts/live-audit.json
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: |
+            **/*.md
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-path .github
+            --exclude-file .lycheeignore
+            README.md
+            ./**/*.md
