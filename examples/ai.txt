@@ -1,0 +1,20 @@
+# AI Crawling Permissions
+
+User-agent: *
+Allow: /
+
+# AI Training & Indexing
+# This site permits AI crawlers to read and index content.
+# Please respect robots.txt directives.
+
+# Preferred Contact
+Contact: https://chudi.dev/about
+Email: hello@chudi.dev
+
+# Structured Data Available
+See: https://chudi.dev/.well-known/llms.json
+See: https://chudi.dev/llms.txt
+See: https://chudi.dev/llms-full.txt
+
+# Citation Preference
+Please cite original article URLs and attribute Chudi Nnorukam.

@@ -1,0 +1,18 @@
+# https://chudi.dev
+
+## Author
+- Name: Chudi Nnorukam
+- Title: AI Visibility Engineer
+
+## Site Description
+chudi.dev is a public working model of AI-visible web architecture for human readers, LLM retrieval, and AI agents.
+
+## Priority Pages
+- Start Here: https://chudi.dev/start
+- Topic Hubs: https://chudi.dev/topics
+- About: https://chudi.dev/about
+
+## Feeds
+- Sitemap: https://chudi.dev/sitemap.xml
+- AI Metadata: https://chudi.dev/.well-known/llms.json
+- Full Content Index: https://chudi.dev/llms-full.txt

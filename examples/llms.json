@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Chudi Nnorukam",
+    "url": "https://chudi.dev",
+    "description": "A public working model of AI-visible web architecture."
+  },
+  "author": {
+    "name": "Chudi Nnorukam",
+    "headline": "AI Visibility Engineer"
+  },
+  "endpoints": {
+    "llmsTxt": "https://chudi.dev/llms.txt",
+    "llmsFullTxt": "https://chudi.dev/llms-full.txt",
+    "aiTxt": "https://chudi.dev/ai.txt"
+  }
+}

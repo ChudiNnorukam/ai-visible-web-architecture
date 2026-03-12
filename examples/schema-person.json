@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chudi Nnorukam",
+  "url": "https://chudi.dev/about",
+  "jobTitle": "AI Visibility Engineer",
+  "sameAs": [
+    "https://github.com/chudinnorukam",
+    "https://linkedin.com/in/chudi-nnorukam-b91203143"
+  ]
+}

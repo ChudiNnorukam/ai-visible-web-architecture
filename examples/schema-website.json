@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "chudi.dev",
+  "url": "https://chudi.dev",
+  "description": "A personal website designed for human readers, LLM retrieval, and AI agents."
+}
