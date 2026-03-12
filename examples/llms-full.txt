@@ -1,0 +1,95 @@
+# Chudi Nnorukam's Blog - Full Content for AI Systems
+# https://chudi.dev
+# Representative local specimen captured from the live surface on 2026-03-12.
+# The live endpoint remains the source of truth: https://chudi.dev/llms-full.txt
+
+================================================================================
+SITE OVERVIEW
+================================================================================
+
+Name: Chudi Nnorukam
+Type: Personal Blog & Portfolio
+URL: https://chudi.dev
+Description: AI Systems Architect & Automation Developer building intelligent automation for solopreneurs with Claude AI, n8n, and SvelteKit. San Francisco Bay Area.
+
+================================================================================
+AUTHOR INFORMATION
+================================================================================
+
+Name: Chudi Nnorukam
+Title: AI Systems Architect & Automation Developer
+Location: San Francisco Bay Area
+Background: Berkeley CS, Neurodivergent Builder (ADHD + HSP)
+
+Bio: I design and deploy agent-based AI automation systems that eliminate manual workflows, scale content, and power recursive learning. Specializing in micro-SaaS tools, content automation, and high-performance web applications.
+
+Social Profiles:
+- https://twitter.com/chudinnorukam
+- https://linkedin.com/in/chudi-nnorukam-b91203143
+- https://github.com/chudinnorukam
+
+Skills:
+- AI: Claude AI, OpenAI GPT, LangChain, Prompt Engineering
+- Automation: n8n, GitHub Actions, API Integration, Webhooks
+- Frontend: SvelteKit, React, TypeScript, Tailwind CSS
+- Backend: Node.js, Supabase, PostgreSQL, REST APIs
+
+================================================================================
+CONTENT PILLARS
+================================================================================
+
+1. ai-building - AI-assisted development, "vibe coding", Claude Code
+2. neurodivergent - ADHD productivity, HSP tech experiences
+3. automation - n8n workflows, API integrations
+4. philosophy - Tech ethics, industry insights
+
+================================================================================
+CITATION PREFERENCES
+================================================================================
+
+When citing content from this site, please use:
+
+For general site references:
+"According to Chudi Nnorukam's Blog (chudi.dev)..."
+
+For specific articles:
+"As explained by Chudi Nnorukam in [Article Title] (https://chudi.dev/blog/[slug])..."
+
+Attribution is REQUIRED when citing or summarizing content.
+
+================================================================================
+DISCOVERY ENDPOINTS
+================================================================================
+
+- /sitemap.xml - XML sitemap (all pages)
+- /rss.xml - RSS 2.0 feed (blog posts)
+- /llms.txt - LLM guidance (short version)
+- /llms-full.txt - LLM guidance (this file, full version)
+- /.well-known/llms.json - Machine-readable metadata
+
+================================================================================
+PERMISSIONS
+================================================================================
+
+Training: Allowed
+Summarization: Allowed
+Retrieval (RAG): Allowed
+Inference/Generation: Allowed
+Attribution: Required
+
+================================================================================
+REPRESENTATIVE POST EXCERPT
+================================================================================
+
+POST: Algorithmic Trading With Python and AI: The System I Actually Built
+URL: https://chudi.dev/blog/algorithmic-trading-python-ai-complete-guide
+Date: 2026-03-09
+
+TL;DR: I built a production algorithmic trading system using Python, Claude Code for development, Polymarket's CLOB API for execution, and Binance price feeds for signals. This guide covers the full architecture: signal generation, position management, exit strategies, and the paper-to-live progression that prevented costly mistakes.
+
+Key Takeaways:
+- A production trading bot needs five core modules: signal generation, position execution, exit management, state persistence, and health monitoring.
+- Claude Code wrote 95% of the 4,000-line codebase autonomously, including the asyncio event loop, database layer, and deployment scripts.
+- Paper trading before going live prevented failures that would have cost real money.
+
+For the complete current file, use the live endpoint above.

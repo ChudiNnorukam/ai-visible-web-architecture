@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: ai-visible-web-architecture
+message: "If you use this repository as a reference, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Nnorukam
+    given-names: Chudi
+    email: hello@chudi.dev
+    website: https://chudi.dev
+repository-code: https://github.com/ChudiNnorukam/ai-visible-web-architecture
+url: https://github.com/ChudiNnorukam/ai-visible-web-architecture
+license: MIT
+abstract: >
+  Public reference documentation for an AI-visible web architecture using chudi.dev
+  as the live case study, with proof docs, diagrams, and executable verification.
+keywords:
+  - ai visibility
+  - llms.txt
+  - webmcp
+  - retrieval
+  - machine-readable identity
+  - answer engine optimization
