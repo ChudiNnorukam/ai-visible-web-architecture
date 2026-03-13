@@ -76,6 +76,8 @@ python3 scripts/audit_live_surfaces.py
 
 The live audit verifies that the public surfaces described here still exist and still satisfy the documented contract.
 
+The default branch is protected by the `quality` gate, so repository changes are expected to move through pull requests rather than direct pushes.
+
 ## Contributing and Governance
 
 - [Contributing Guide](./CONTRIBUTING.md)

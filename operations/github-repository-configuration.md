@@ -24,13 +24,26 @@ This document captures the repository settings that must be configured in GitHub
 
 ## Branch Protection
 
-Apply these rules to `main`:
+Active policy for `main`:
 
-- require pull request review before merge once there is more than one active contributor
+- require pull request review before merge
 - require status checks to pass before merge
 - include `public-repo-quality` as a required check
+- require conversation resolution before merge
+- enforce the rules for administrators
 - block force pushes
 - block deletion of `main`
+
+## Emergency Changes
+
+Admin bypass is for emergencies only.
+
+Normal repository maintenance should happen through:
+
+1. a branch
+2. a pull request
+3. a green `public-repo-quality` run
+4. a merge through the PR path
 
 ## Security Settings
 
