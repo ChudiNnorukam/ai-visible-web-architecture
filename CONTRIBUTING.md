@@ -7,11 +7,12 @@ This repository documents a live public system and a generalized pattern derived
 ## Before You Open a PR
 
 1. Read [README.md](./README.md), [proof/live-surfaces.md](./proof/live-surfaces.md), and [proof/live-audit.md](./proof/live-audit.md).
-2. Confirm whether your change is:
+2. Read the operating guidance in [operations/agent-capability-profile.md](./operations/agent-capability-profile.md), [operations/agent-standards-pack.md](./operations/agent-standards-pack.md), and [operations/research-and-evidence-rules.md](./operations/research-and-evidence-rules.md) before making architectural or standards-driven claims.
+3. Confirm whether your change is:
    - `Verified`: grounded in live public surfaces or runnable checks
    - `Inferred`: a reasoned interpretation of the system
    - `Target State`: a recommended future operating model
-3. If you add or change a claim about `chudi.dev`, update the proof or verification docs in the same change.
+4. If you add or change a claim about `chudi.dev`, update the proof or verification docs in the same change.
 
 ## Contribution Standards
 

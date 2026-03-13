@@ -81,6 +81,9 @@ The live audit verifies that the public surfaces described here still exist and 
 - [Contributing Guide](./CONTRIBUTING.md)
 - [Security Policy](./SECURITY.md)
 - [Support](./SUPPORT.md)
+- [Agent Capability Profile](./operations/agent-capability-profile.md)
+- [Agent Standards Pack](./operations/agent-standards-pack.md)
+- [Research and Evidence Rules](./operations/research-and-evidence-rules.md)
 - [GitHub Repository Configuration](./operations/github-repository-configuration.md)
 
 ## Repository Structure
