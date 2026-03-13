@@ -40,10 +40,7 @@ jobs:
           path: artifacts/live-audit.json
 
       - name: Markdown lint
-        uses: DavidAnson/markdownlint-cli2-action@v22.0.0
-        with:
-          globs: |
-            **/*.md
+        run: npx --yes markdownlint-cli2 "**/*.md"
 
       - name: Link check
         uses: lycheeverse/lychee-action@v2.8.0
