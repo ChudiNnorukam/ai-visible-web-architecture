@@ -17,6 +17,7 @@ This repository documents a live public system and a generalized pattern derived
 ## Contribution Standards
 
 - Prefer small, reviewable pull requests.
+- Work on a branch and open a pull request against `main`; the default branch is protected and merge-only through PRs.
 - Keep prose concrete and technically defensible.
 - Add or update verification when a public claim changes.
 - Use Markdown and Mermaid that render cleanly on GitHub.
@@ -31,6 +32,8 @@ python3 -m py_compile scripts/*.py
 python3 scripts/check_repo_quality.py
 python3 scripts/audit_live_surfaces.py
 ```
+
+Open the PR only after the local checks pass, because the same quality gate is enforced on GitHub.
 
 ## Pull Request Expectations
 

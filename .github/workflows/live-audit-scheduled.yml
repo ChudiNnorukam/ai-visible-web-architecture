@@ -5,16 +5,19 @@ on:
   schedule:
     - cron: "0 15 * * *"
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   live-audit:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6.2.0
         with:
           python-version: "3.11"
 
@@ -24,7 +27,7 @@ jobs:
           python3 scripts/audit_live_surfaces.py --json-out artifacts/live-audit.json
 
       - name: Upload live audit artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.0
         with:
           name: live-audit
           path: artifacts/live-audit.json
