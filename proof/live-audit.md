@@ -13,6 +13,7 @@ Those claims should be runnable, not just readable.
 3. `llms.txt` and `ai.txt` expose the expected discovery and guidance markers.
 4. `.well-known/llms.json` exposes the minimum machine-readable contract this repo relies on.
 5. `sitemap.xml` includes the core site sections used in repo documentation.
+6. The WebMCP proof article includes the key implementation markers this repo cites when discussing the agent interface layer.
 
 `scripts/check_repo_quality.py` verifies the local repo contract:
 

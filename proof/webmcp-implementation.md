@@ -1,6 +1,6 @@
 # WebMCP Implementation Proof
 
-`chudi.dev` documents and exposes WebMCP as a live browser-side interface layer.
+`chudi.dev` documents and publicly demonstrates WebMCP as a browser-side interface layer.
 
 ## Observable Behavior
 
@@ -10,4 +10,4 @@
 
 ## Why It Matters
 
-This is the clearest proof that the site is designed for agent interoperability, not just passive discoverability.
+This is strong public evidence that the site is designed for agent interoperability, not just passive discoverability.

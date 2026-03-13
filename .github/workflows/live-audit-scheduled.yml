@@ -31,3 +31,36 @@ jobs:
         with:
           name: live-audit
           path: artifacts/live-audit.json
+
+  open-failure-issue:
+    if: failure()
+    needs: live-audit
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Create or update audit failure issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Scheduled live audit failed"
+          body_file="$(mktemp)"
+          {
+            echo "The scheduled live audit failed."
+            echo
+            echo "- Workflow: ${{ github.workflow }}"
+            echo "- Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo "- Commit: ${{ github.sha }}"
+            echo
+            echo "Investigate the live surface contract and restore the expected public proof state."
+          } > "$body_file"
+
+          existing_number="$(gh issue list --repo "${{ github.repository }}" --state open --search "$title in:title" --json number --jq '.[0].number')"
+
+          if [ -n "$existing_number" ] && [ "$existing_number" != "null" ]; then
+            gh issue comment "$existing_number" --repo "${{ github.repository }}" --body-file "$body_file"
+          else
+            gh issue create --repo "${{ github.repository }}" --title "$title" --body-file "$body_file" --label bug
+          fi

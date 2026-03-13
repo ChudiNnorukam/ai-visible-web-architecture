@@ -17,10 +17,10 @@ An agent interface layer exposes structured capabilities directly from the site.
 
 ## Applied to chudi.dev
 
-`chudi.dev` exposes live WebMCP browser tools for:
+`chudi.dev` publicly documents and demonstrates WebMCP browser tools for:
 
 - searching posts
 - listing posts
 - returning author context
 
-This reduces ambiguity for agents and turns the site into a callable system, not just a page surface.
+This reduces ambiguity for agents and moves the site toward a callable system, not just a page surface.
