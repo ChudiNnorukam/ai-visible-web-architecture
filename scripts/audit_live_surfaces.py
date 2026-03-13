@@ -111,6 +111,12 @@ EXPECTED_SITEMAP_URLS = (
     f"{BASE_URL}/products",
     f"{BASE_URL}/portfolio",
 )
+EXPECTED_WEBMCP_MARKERS = (
+    "navigator.modelContext",
+    "searchPosts",
+    "listPosts",
+    "getAuthorContext",
+)
 
 RESULTS: list[dict[str, object]] = []
 
@@ -245,6 +251,19 @@ def ensure_sitemap_contract() -> None:
     record("sitemap coverage", not missing, detail, SITEMAP_URL)
 
 
+def ensure_webmcp_proof_contract() -> None:
+    url = f"{BASE_URL}/blog/webmcp-sveltekit-implementation"
+    _, _, body = fetch(url)
+    text = body.decode("utf-8", errors="replace")
+    missing = [marker for marker in EXPECTED_WEBMCP_MARKERS if marker not in text]
+    detail = (
+        "proof article contains expected WebMCP markers"
+        if not missing
+        else f"missing markers: {', '.join(missing)}"
+    )
+    record("webmcp proof markers", not missing, detail, url)
+
+
 def write_json_report(path: str) -> None:
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
@@ -273,6 +292,7 @@ def main() -> int:
     ensure_ai_txt_has_agent_markers()
     ensure_llms_json_contract()
     ensure_sitemap_contract()
+    ensure_webmcp_proof_contract()
     if args.json_out:
         write_json_report(args.json_out)
     failures = sum(1 for item in RESULTS if not item["ok"])

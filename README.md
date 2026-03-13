@@ -21,7 +21,7 @@ This repository documents how one public site is designed to work across three a
 - `llms.txt`, `llms-full.txt`, `ai.txt`, and `.well-known/llms.json`
 - structured identity metadata and topic-based site organization
 - answer-oriented content designed for retrieval and citation
-- browser-side WebMCP tooling for direct agent queries
+- documented and publicly demonstrated browser-side WebMCP tooling for direct agent queries
 
 ## What This Repo Generalizes
 
@@ -77,6 +77,8 @@ python3 scripts/audit_live_surfaces.py
 The live audit verifies that the public surfaces described here still exist and still satisfy the documented contract.
 
 The default branch is protected by the `quality` gate, so repository changes are expected to move through pull requests rather than direct pushes.
+
+Dependabot keeps the GitHub Actions dependencies current, and the scheduled live audit now opens or updates an issue automatically if the public proof contract fails.
 
 ## Contributing and Governance
 

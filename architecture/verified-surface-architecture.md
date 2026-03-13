@@ -26,7 +26,7 @@ From those surfaces, this repo can verify that `chudi.dev` behaves like:
 2. a machine-readable identity and discovery node
 3. an agent-facing interface surface
 
-The proof is behavioral rather than internal. The site publishes explicit discovery endpoints, stable identity metadata, and at least one documented agent tooling path.
+The proof is behavioral rather than internal. The site publishes explicit discovery endpoints, stable identity metadata, and at least one documented and publicly demonstrable agent tooling path.
 
 ## Supporting Docs
 

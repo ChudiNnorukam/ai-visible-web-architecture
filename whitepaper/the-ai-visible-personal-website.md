@@ -33,7 +33,7 @@ The point is not to replace the visible website. The point is to let one authori
 - site-level AI discovery files
 - structured entity metadata
 - topic hubs for orientation and retrieval
-- WebMCP tools for direct agent queries
+- documented WebMCP tooling for direct agent queries
 
 That combination turns the site into more than a blog. It behaves like a knowledge base, a machine-readable identity node, and an interface layer for agents.
 
