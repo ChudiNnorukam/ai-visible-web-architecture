@@ -30,6 +30,13 @@ This repository documents how one public site is designed to work across three a
 - an evidence model for separating verified public behavior from system interpretation
 - an executable verification loop so claims can be checked instead of trusted
 
+## Case Study Posts
+
+These posts document patterns from this architecture applied to a production system:
+
+- [How I Built a 4,000-Line Production Trading Bot With Claude Code](https://chudi.dev/blog/claude-code-production-trading-bot) — context management, two-gate verification, and Claude Code in a 4,000-line live-money codebase
+- [Claude Code Hooks: A Complete Tutorial](https://chudi.dev/blog/claude-code-hooks-tutorial) — the enforcement layer: pre/post-tool hooks for secret scanning, formatting, and destructive-command approval gates
+
 ## Start Here
 
 - [Whitepaper](./whitepaper/the-ai-visible-personal-website.md)
