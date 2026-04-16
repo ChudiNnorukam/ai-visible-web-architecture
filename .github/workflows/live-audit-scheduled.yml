@@ -27,7 +27,7 @@ jobs:
           python3 scripts/audit_live_surfaces.py --json-out artifacts/live-audit.json
 
       - name: Upload live audit artifact
-        uses: actions/upload-artifact@v7.0.0
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: live-audit
           path: artifacts/live-audit.json
