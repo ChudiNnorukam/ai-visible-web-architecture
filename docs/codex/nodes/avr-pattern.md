@@ -68,10 +68,13 @@ later chapter.
 ### Naming context
 
 This repository's framework name is "AI-Visible Web Architecture." It is
-NOT the same thing as citability-dev's "AVR Score" (Answer Visibility
-Ratio) or the "AI Visibility Readiness Framework" 15-check audit hosted at
-`github.com/ChudiNnorukam/ai-visibility-readiness`. See
-`naming-canonical-split` for the canonical resolution across surfaces.
+NOT abbreviated to "AVR" anywhere here. Across the operator's portfolio
+"AVR" canonically expands to "AI Visibility Readiness" (the audit
+framework hosted at `github.com/ChudiNnorukam/ai-visibility-readiness`
+and consumed by citability.dev as the framework that produces the AVR
+Score). See `naming-canonical-split` for the full resolution across
+surfaces, including the 2026-05-02 ratification reversal that removed
+the "Answer Visibility Ratio" backronym.
 
 ## Where
 

@@ -103,7 +103,11 @@ These belong to citability-dev primarily; they appear here because the
 naming canonical split spans both repos. Source-of-truth nodes live in
 `~/Projects/citability-dev/docs/codex/nodes/`.
 
-- **AVR Score (Answer Visibility Ratio)**: citability's product score.
+- **AVR Score**: citability.dev's product score (a 0-100 number
+  rolling up V/R/C across LLM engines). The acronym AVR expands to
+  "AI Visibility Readiness" (the framework). The score itself takes
+  no separate canonical expansion: a prior "Answer Visibility Ratio"
+  backronym was repudiated 2026-05-02. See `naming-canonical-split`.
 - **VRC (Visibility, Recommendability, Citability)**: the score's
   component axes.
 - **vScore**: citability's citation rate measurement.
