@@ -22,7 +22,7 @@ code_refs:
 related: [avr-pattern, verification-discipline, entity-and-authority-stack]
 parent_concepts: [avr-pattern]
 child_concepts: []
-last_verified: 2026-05-01
+last_verified: 2026-05-02
 confidence: inferred
 ---
 

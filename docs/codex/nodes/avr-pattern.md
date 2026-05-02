@@ -22,7 +22,7 @@ code_refs:
 related: [surface-contract, verification-discipline, naming-canonical-split, entity-and-authority-stack]
 parent_concepts: []
 child_concepts: []
-last_verified: 2026-05-01
+last_verified: 2026-05-02
 confidence: inferred
 ---
 

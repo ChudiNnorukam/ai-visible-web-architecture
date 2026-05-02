@@ -49,11 +49,11 @@ distinct things in the operator's portfolio:
 | VRC | citability.dev | the score's component axes (Visibility, Recommendability, Citability) |
 | Agent Readiness | citability.dev (parallel wedge) | preparation for agent-action and agent-commerce surfaces (Stripe ACP + Google WebMCP) |
 
-Status of this naming split: `Inferred`, pending operator
-ratification. See
-[`docs/codex/nodes/naming-canonical-split.md`](./docs/codex/nodes/naming-canonical-split.md)
-for the full resolution and the upstream source in citability-dev's
-codex.
+Status of this naming split: `Verified`, ratified 2026-05-02 in
+[`docs/codex/nodes/naming-canonical-split.md`](./docs/codex/nodes/naming-canonical-split.md).
+The upstream citability-dev `avr-naming-authority` node is still
+pending its own ratification; this repo's resolution stands
+independently.
 
 ## Case Study Posts
 
@@ -88,9 +88,10 @@ These posts document patterns from this architecture applied to a production sys
 ### Off-site authority and audit chapters (`Inferred`)
 
 These chapters document the layers the on-site pattern depends on but
-does not, by itself, supply. Each is `Inferred` until the operator
-ratifies the naming canonical split (see "Vocabulary and Naming"
-above) and the public surface is published.
+does not, by itself, supply. The naming canonical split was ratified
+2026-05-02; the chapters themselves remain `Inferred` until adopters
+exercise them in practice (most claims are reasoned from primary
+sources rather than measured against a verifiable surface).
 
 - [The 15-Check Audit (AI Visibility Readiness)](./architecture/the-fifteen-check-audit.md)
 - [Entity Authority Layer](./architecture/entity-authority-layer.md)

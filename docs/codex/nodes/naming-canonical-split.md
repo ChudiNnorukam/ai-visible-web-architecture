@@ -16,8 +16,9 @@ related:
 parent_concepts: []
 child_concepts: []
 code_refs: []
-last_verified: null
-confidence: inferred
+last_verified: 2026-05-02
+confidence: verified
+ratified: 2026-05-02
 ---
 
 ## What
@@ -68,21 +69,24 @@ public reference doc:
   Web Architecture" semantics; if the operator later overrides the
   resolution and renames either side, those backlinks become stale.
 
-### Ratification gate (load-bearing)
+### Ratification status
 
-This node is `inferred` until the operator ratifies the canonical split.
-Per the 2026-05-01 audit red-team outcome, the publication step (git
-push / PR open) for this repo's evolution is gated on operator first
-ratifying the resolution either:
+`Verified` and `ratified: 2026-05-02` per operator decision in the
+2026-05-02 audit-evolution session. Operator picked path (a):
+ratify here in this repo, with citability-dev's
+`avr-naming-authority` node still pending its own upstream
+ratification. Path (a) was chosen over path (b) for speed; the two
+paths are equivalent in outcome.
 
-(a) here in writing (flip this node's `confidence: inferred → verified`
-and add `ratified: <date>`), OR
+Original red-team gate on the 2026-05-01 audit-evolution publication
+step has now cleared. This repo's public surface (README,
+whitepaper, the four new architecture chapters) may be pushed and
+will earn backlinks under the canonical names ratified here.
 
-(b) over in citability-dev (ratify
-`citability-dev/docs/codex/nodes/avr-naming-authority.md` first; this
-repo then defers to that ratification).
-
-Path (a) and (b) are equivalent in outcome. Operator picks the order.
+If the operator later overrides (e.g., "AVR stays the framework name
+across the board"), see "Override path" below for the rewrite
+sequence; the override cost is asymmetric to backlinks already
+earned, so override should be deliberate.
 
 ### Override path
 

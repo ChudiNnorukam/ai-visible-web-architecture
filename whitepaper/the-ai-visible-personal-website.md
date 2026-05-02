@@ -69,4 +69,4 @@ audit hosted at `github.com/ChudiNnorukam/ai-visibility-readiness`),
 the "AVR Score" used by citability.dev, or the "Agent Readiness"
 parallel wedge. See `README.md#vocabulary-and-naming` and
 `docs/codex/nodes/naming-canonical-split.md` for the canonical split,
-which is `Inferred` pending operator ratification.
+ratified 2026-05-02.
