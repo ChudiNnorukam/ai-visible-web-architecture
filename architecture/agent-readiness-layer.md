@@ -214,13 +214,13 @@ It is NOT appropriate when:
 - citability-dev codex node `agent-action-surface`: implementation
   notes for `/.well-known/agent-actions`.
 - Stripe Agentic Commerce Protocol:
-  https://docs.stripe.com/agentic-commerce/acp.
+  <https://docs.stripe.com/agentic-commerce/acp>.
 - Stripe Link wallet for agents:
-  https://stripe.com/blog/giving-agents-the-ability-to-pay.
+  <https://stripe.com/blog/giving-agents-the-ability-to-pay>.
 - Google WebMCP preview coverage:
-  https://searchengineland.com/google-releases-preview-of-webmcp-how-ai-agents-interact-with-websites-469024
+  <https://searchengineland.com/google-releases-preview-of-webmcp-how-ai-agents-interact-with-websites-469024>
   and
-  https://venturebeat.com/infrastructure/google-chrome-ships-webmcp-in-early-preview-turning-every-website-into-a.
+  <https://venturebeat.com/infrastructure/google-chrome-ships-webmcp-in-early-preview-turning-every-website-into-a>.
 - Anthropic Model Context Protocol announcement and specification:
-  https://www.anthropic.com/news/model-context-protocol and
-  https://modelcontextprotocol.io/specification/2025-03-26.
+  <https://www.anthropic.com/news/model-context-protocol> and
+  <https://modelcontextprotocol.io/specification/2025-03-26>.

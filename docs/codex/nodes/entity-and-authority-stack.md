@@ -158,9 +158,9 @@ External primary sources (for the chapters that get drafted):
 - Wikipedia notability for organizations: WP:GNG, WP:ORG.
 - schema.org Organization + Person types with sameAs.
 - Stripe Agentic Commerce Protocol:
-  https://docs.stripe.com/agentic-commerce/acp .
+  <https://docs.stripe.com/agentic-commerce/acp>.
 - Google WebMCP preview:
-  https://searchengineland.com/google-releases-preview-of-webmcp-how-ai-agents-interact-with-websites-469024 .
+  <https://searchengineland.com/google-releases-preview-of-webmcp-how-ai-agents-interact-with-websites-469024>.
 
 ## When-to-touch
 
