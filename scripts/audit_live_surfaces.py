@@ -53,6 +53,11 @@ SURFACE_CHECKS = [
         "expected_types": XML_CONTENT_TYPES,
     },
     {
+        "name": "robots.txt",
+        "url": f"{BASE_URL}/robots.txt",
+        "expected_types": TEXT_CONTENT_TYPES,
+    },
+    {
         "name": "start",
         "url": f"{BASE_URL}/start",
         "expected_types": HTML_CONTENT_TYPES,

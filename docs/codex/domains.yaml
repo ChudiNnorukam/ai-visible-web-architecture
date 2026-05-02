@@ -1,0 +1,70 @@
+version: 1
+generated_at: 2026-05-01
+description: >
+  Domain taxonomy for the ai-visible-web-architecture knowledge codex.
+  This repo is a public reference doc; the codex grounds future audit and
+  evolution sessions so each one continues from the last instead of
+  restarting at zero. Each node in nodes/<id>.md MUST declare a `domain:`
+  matching one of these keys.
+
+domains:
+  pattern-architecture:
+    description: >
+      The 3-layer AI-visible web pattern this repo describes (retrieval-aware
+      info design, machine-readable identity, agent-facing interface) and how
+      the layers compose into one source-of-truth graph. Expected to grow as
+      pattern chapters are added.
+    user-vocabulary:
+      - "the 3-layer pattern"
+      - "the architecture"
+      - "the AVR pattern"
+      - "AI-visible web architecture"
+      - "the framework"
+
+  surface-contract:
+    description: >
+      The public machine-readable artifacts the pattern depends on (llms.txt,
+      llms-full.txt, ai.txt, .well-known/llms.json, schema JSON-LD,
+      robots.txt, WebMCP). Examples specimens live in examples/. Expected to
+      grow as additional surface specs and adopter checklists are added.
+    user-vocabulary:
+      - "the contract"
+      - "llms.txt"
+      - "llms-full.txt"
+      - "ai.txt"
+      - "well-known"
+      - "schema"
+      - "WebMCP"
+      - "the surfaces"
+
+  verification-discipline:
+    description: >
+      The evidence-first audit loop (verification-matrix, live-audit script,
+      check_repo_quality script, evidence labels Verified/Inferred/Target).
+      Expected to grow as new claims need new audit checks (entity parity,
+      sameAs reciprocity, AI-crawler allow-list, schema coverage).
+    user-vocabulary:
+      - "the audit"
+      - "the verification matrix"
+      - "the live audit"
+      - "evidence labels"
+      - "Verified vs Inferred"
+      - "the proof"
+      - "the scripts"
+
+  evolution-strategy:
+    description: >
+      What this repo is becoming, not just what it is today. Captures naming
+      canonical split, entity-authority moat, backlink reality, agent-readiness
+      wedge, and other concepts surfaced from citability-dev + chudi-blog
+      codexes that the architecture should absorb. Most nodes start `target`
+      until the corresponding chapter ships and gets ratified.
+    user-vocabulary:
+      - "evolution"
+      - "what's next"
+      - "AVR vs framework"
+      - "naming"
+      - "entity authority"
+      - "agent readiness"
+      - "backlinks"
+      - "the moat"
