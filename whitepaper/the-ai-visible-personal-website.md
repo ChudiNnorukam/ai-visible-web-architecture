@@ -46,3 +46,27 @@ The same source of truth should support:
 - callable context for agents
 
 If those surfaces diverge, the public artifact becomes inconsistent. If they stay aligned, the site becomes easier to trust and easier to cite.
+
+## What This Pattern Does Not Cover
+
+The 3-layer pattern handles the on-site half of AI visibility. It does
+not, by itself, address the off-site half: training-data presence
+(Wikipedia, Wikidata, Common Crawl, podcast transcripts), backlinks
+and referring domain authority, citation evidence (whether models
+actually cite the site when asked), or agent-action and
+agent-commerce readiness (Stripe Agentic Commerce Protocol, Google
+WebMCP).
+
+These layers are documented in companion architecture chapters and in
+the entity-and-authority codex node. They are listed as `Target State`
+until each chapter ships and is ratified.
+
+## Naming
+
+This pattern is called "AI-Visible Web Architecture." It is not the
+same as the "AI Visibility Readiness Framework" (a separate 15-check
+audit hosted at `github.com/ChudiNnorukam/ai-visibility-readiness`),
+the "AVR Score" used by citability.dev, or the "Agent Readiness"
+parallel wedge. See `README.md#vocabulary-and-naming` and
+`docs/codex/nodes/naming-canonical-split.md` for the canonical split,
+ratified 2026-05-02.

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-05-02T23:08:49+00:00",
+  "node_count": 5,
+  "domains": {
+    "evolution-strategy": [
+      "entity-and-authority-stack",
+      "naming-canonical-split"
+    ],
+    "pattern-architecture": [
+      "avr-pattern"
+    ],
+    "surface-contract": [
+      "surface-contract"
+    ],
+    "verification-discipline": [
+      "verification-discipline"
+    ]
+  },
+  "terms": {
+    "3-layer-pattern": "avr-pattern",
+    "ai-txt": "surface-contract",
+    "ai-visible-web-architecture": "avr-pattern",
+    "audit-script": "verification-discipline",
+    "authority-layer": "entity-and-authority-stack",
+    "avr-naming": "naming-canonical-split",
+    "avr-pattern": "avr-pattern",
+    "avr-vs-architecture": "naming-canonical-split",
+    "entity-and-authority-stack": "entity-and-authority-stack",
+    "entity-authority": "entity-and-authority-stack",
+    "evidence-first": "verification-discipline",
+    "evidence-labels": "verification-discipline",
+    "framework-vs-score": "naming-canonical-split",
+    "kg-panel": "entity-and-authority-stack",
+    "live-audit": "verification-discipline",
+    "llms-full-txt": "surface-contract",
+    "llms-txt": "surface-contract",
+    "machine-readable-contract": "surface-contract",
+    "naming-canonical-split": "naming-canonical-split",
+    "naming-conflict": "naming-canonical-split",
+    "off-page-authority": "entity-and-authority-stack",
+    "public-surfaces": "surface-contract",
+    "retrieval-aware-info-design": "avr-pattern",
+    "sameas-graph": "entity-and-authority-stack",
+    "surface-contract": "surface-contract",
+    "the-audit": "verification-discipline",
+    "the-contract": "surface-contract",
+    "the-framework": "avr-pattern",
+    "the-moat": "entity-and-authority-stack",
+    "the-naming": "naming-canonical-split",
+    "the-pattern": "avr-pattern",
+    "the-proof": "verification-discipline",
+    "three-layer-pattern": "avr-pattern",
+    "training-data-presence": "entity-and-authority-stack",
+    "verification-discipline": "verification-discipline",
+    "verification-matrix": "verification-discipline",
+    "verified-inferred-target": "verification-discipline",
+    "vrc-naming": "naming-canonical-split",
+    "webmcp-contract": "surface-contract",
+    "well-known-llms-json": "surface-contract",
+    "wikidata-wikipedia": "entity-and-authority-stack"
+  }
+}

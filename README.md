@@ -30,6 +30,43 @@ This repository documents how one public site is designed to work across three a
 - an evidence model for separating verified public behavior from system interpretation
 - an executable verification loop so claims can be checked instead of trusted
 
+## Vocabulary and Naming
+
+This repo's framework name is **"AI-Visible Web Architecture"**: the
+reusable 3-layer pattern (retrieval-aware information design,
+machine-readable identity and discovery, agent-facing interface
+surfaces).
+
+It is intentionally NOT abbreviated to "AVR" anywhere in this
+repository. Across the operator's portfolio, the acronym "AVR"
+canonically expands to **"AI Visibility Readiness"**: the audit
+framework hosted at
+[`ChudiNnorukam/ai-visibility-readiness`](https://github.com/ChudiNnorukam/ai-visibility-readiness)
+and consumed by [citability.dev](https://citability.dev). The
+acronym does NOT expand to anything else in this portfolio.
+
+| Term | Where it lives | What it is |
+|---|---|---|
+| AVR (acronym) | across the portfolio | "AI Visibility Readiness" (the framework name) |
+| AI-Visible Web Architecture | this repo | the 3-layer pattern (this document) |
+| AI Visibility Readiness Framework | [`ChudiNnorukam/ai-visibility-readiness`](https://github.com/ChudiNnorukam/ai-visibility-readiness) | the 15-check tiered audit (Tier 1 SEO Foundation, Tier 2 AI Infrastructure, Tier 3 Citation Monitoring) |
+| AVR Score | [citability.dev](https://citability.dev) | the framework's 0-100 numeric output rolling up V/R/C across LLM engines |
+| VRC | citability.dev | the score's component axes (Visibility, Recommendability, Citability) |
+| Agent Readiness | citability.dev (parallel wedge) | preparation for agent-action and agent-commerce surfaces (Stripe ACP + Google WebMCP) |
+
+Status of this naming split: `Inferred`, pending re-ratification.
+A prior 2026-05-02 ratification mapped the score's name to "Answer
+Visibility Ratio"; that mapping was repudiated by the operator
+(the phrase originated in an LLM-coined backronym that crept into
+[citability.dev's `.well-known/citability.json`](https://citability.dev/.well-known/citability.json)
+and contradicts the same site's FAQ). The corrected canonical
+mapping above lands `Inferred` until the operator reads the
+rewritten
+[`docs/codex/nodes/naming-canonical-split.md`](./docs/codex/nodes/naming-canonical-split.md)
+node and ratifies. A parallel pull request in `citability-dev`
+removes the "Answer Visibility Ratio" expansion from the live trust
+surfaces.
+
 ## Case Study Posts
 
 These posts document patterns from this architecture applied to a production system:
@@ -59,6 +96,18 @@ These posts document patterns from this architecture applied to a production sys
 - [Conceptual System Architecture](./architecture/conceptual-system-architecture.md)
 - [Target Operating Model](./architecture/target-operating-model.md)
 - [Source-of-Truth Operations](./architecture/source-of-truth-operations.md)
+
+### Off-site authority and audit chapters (`Inferred`)
+
+These chapters document the layers the on-site pattern depends on but
+does not, by itself, supply. They remain `Inferred` until adopters
+exercise them in practice (most claims are reasoned from primary
+sources rather than measured against a verifiable surface).
+
+- [The 15-Check Audit (AI Visibility Readiness)](./architecture/the-fifteen-check-audit.md)
+- [Entity Authority Layer](./architecture/entity-authority-layer.md)
+- [Backlinks and Off-Page Authority](./architecture/backlink-and-off-page.md)
+- [Agent Readiness Layer](./architecture/agent-readiness-layer.md)
 
 ### Diagrams
 
@@ -106,6 +155,29 @@ Dependabot keeps the GitHub Actions dependencies current, and the scheduled live
 - `operations/`: repository settings and governance guidance that live outside git-tracked code
 - `scripts/`: executable verification utilities
 - `whitepaper/`: longer-form framing for the overall pattern
+- `docs/codex/`: knowledge codex (nodes, domain taxonomy, INDEX.json) used by the librarian protocol to ground future audit and evolution sessions
+- `docs/GLOSSARY.md`: first-pass vocabulary, including terms not yet promoted to codex nodes
+- `tools/`: codex maintenance utilities (`codex_verify.py`)
+
+## Knowledge Codex
+
+This repository carries a structured knowledge codex at
+[`docs/codex/`](./docs/codex/). It is not user-facing documentation;
+it grounds the operator's librarian protocol so each future audit and
+evolution session continues from the last instead of restarting at
+zero.
+
+To verify the codex locally:
+
+```bash
+python3 tools/codex_verify.py --rebuild-index
+python3 tools/codex_verify.py --all
+```
+
+Drift on a `code_refs` slice is informational, not a CI failure. A
+human ratifies semantic shifts before the slice is updated. See
+[`docs/codex/nodes/verification-discipline.md`](./docs/codex/nodes/verification-discipline.md)
+for the discipline.
 
 ## Constraint
 
