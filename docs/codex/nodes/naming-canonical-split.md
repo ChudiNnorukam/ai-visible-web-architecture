@@ -37,7 +37,7 @@ canonical expansion.
 |---|---|---|
 | **AVR (acronym)** | across the portfolio | "AI Visibility Readiness" (the framework name). Used consistently by chudi.dev (`docs/GLOSSARY.md`, blog posts) and citability.dev (FAQ structured data, `app/page.tsx`). |
 | **AI-Visible Web Architecture** | This repo (`ai-visible-web-architecture`) | The reusable 3-layer pattern (info design + identity + agent interface). NOT abbreviated to "AVR" anywhere here. |
-| **AI Visibility Readiness Framework** | `github.com/ChudiNnorukam/ai-visibility-readiness` (separate repo) + citability-dev `lib/avr-status.ts` | The 15-check tiered audit (Tier 1 SEO Foundation / Tier 2 AI Infrastructure / Tier 3 Citation Monitoring) with discrete status (AI-READY / INFRASTRUCTURE-READY / FOUNDATION-READY / NOT-READY). Documented in citability-dev's `avr-framework` node. |
+| **AI Visibility Readiness Framework** | `github.com/ChudiNnorukam/ai-visibility-readiness` (separate repo) + citability-dev `lib/avr-status.ts` | The tiered audit (Tier 1 SEO Foundation / Tier 2 AI Infrastructure / Tier 3 Citation Monitoring) with discrete status (AI-READY / INFRASTRUCTURE-READY / FOUNDATION-READY / NOT-READY). Documented in citability-dev's `avr-framework` node. |
 | **AVR Score** | citability.dev `public/.well-known/citability.json` + `app/docs/page.tsx` | The framework's 0-100 numeric output, rolling up Visibility, Recommendability, Citability across LLM engines. Takes no separate canonical expansion: it is "the AVR Score" or, when contextually clear, "the score." |
 | **VRC** | citability.dev product UI + receipts | The component breakdown (Visibility, Recommendability, Citability) underlying the AVR Score. |
 | **Agent Readiness** | citability-dev `agent-readiness-wedge` node | A parallel product wedge separate from AVR. Measures agent-action / agent-commerce readiness (Stripe ACP + Google WebMCP). NOT a sub-component of AVR. |
@@ -71,7 +71,7 @@ in scope for this resolution.
    reusable 3-layer web pattern this repo describes. NOT abbreviated
    to "AVR" in any public surface here, to avoid acronym collision
    with the framework above.
-3. **"AI Visibility Readiness Framework"**: the 15-check audit
+3. **"AI Visibility Readiness Framework"**: the AVR audit
    methodology. Lives in the separate `ai-visibility-readiness` repo.
    This repo references it but does not redefine it.
 4. **"AVR Score"**: citability.dev's product score, a 0-100 number
@@ -156,7 +156,7 @@ that references external authorities:
 - `citability-dev/app/page.tsx`: FAQ structured data that AI
   engines parse. Corrected by the parallel PR.
 - `github.com/ChudiNnorukam/ai-visibility-readiness/FRAMEWORK.md`:
-  the canonical 15-check spec the framework name refers to.
+  the canonical AVR check list (CHECKS.md) the framework name refers to.
 
 ## When-to-touch
 

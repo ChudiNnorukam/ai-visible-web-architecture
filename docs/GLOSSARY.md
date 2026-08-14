@@ -61,11 +61,12 @@ when a real request surfaces it.
   structural gate.
 - **Verified / Inferred / Target State**: the three evidence labels
   (matches global G8 portfolio standard).
-- **AVR Framework / 15-check audit**: the audit methodology in
+- **AVR Framework / AVR audit**: the audit methodology in
   `github.com/ChudiNnorukam/ai-visibility-readiness`. See
-  `naming-canonical-split` for the canonical resolution; the actual
-  chapter is planned at
-  `architecture/the-fifteen-check-audit.md`.
+  `naming-canonical-split` for the canonical resolution. The chapter is
+  `architecture/the-fifteen-check-audit.md`; the check list itself is
+  generated at `CHECKS.md` in the framework repo and is the only place
+  it is written down.
 
 ### Authority and entity layer
 

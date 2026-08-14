@@ -22,7 +22,7 @@ code_refs:
 related: [avr-pattern, surface-contract, entity-and-authority-stack]
 parent_concepts: [avr-pattern]
 child_concepts: []
-last_verified: 2026-05-02
+last_verified: 2026-05-06
 confidence: inferred
 ---
 
@@ -98,8 +98,9 @@ The matrix verifies:
 - Entity-graph parity across surfaces (LinkedIn / GitHub / Medium bios
   match the canonical Person schema).
 
-Each unverified row is a candidate for the planned 15-check audit
-chapter and the corresponding extension of audit_live_surfaces.py.
+Each unverified row is a candidate for a corresponding extension of
+audit_live_surfaces.py. Diff the rows against `CHECKS.md` in the
+ai-visibility-readiness repo to see what the framework already covers.
 
 ## Where
 
@@ -118,7 +119,7 @@ In-repo:
 
 External grounding (the discipline mirrors others):
 
-- `citability-dev/docs/codex/nodes/avr-framework.md`: the 15-check
+- `citability-dev/docs/codex/nodes/avr-framework.md`: the AVR
   framework also separates VERIFIABLE checks from BEST-EFFORT checks,
   the same idea expressed differently.
 - `citability-dev/PRINCIPLES.md`: "Trust artifact" discipline (don't
