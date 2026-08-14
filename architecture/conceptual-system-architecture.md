@@ -12,13 +12,23 @@ An AI-visible website needs one authority graph that can support:
 
 ## Conceptual Components
 
-The generalized architecture has five subsystems:
+The generalized website architecture has five core subsystems:
 
 1. content source of truth
 2. presentation layer for human pages
 3. machine-readable export layer
 4. agent interface layer
 5. verification and operations loop
+
+The live portfolio demonstrates two additional cross-property subsystems that
+sit around, rather than inside, an individual website:
+
+6. entity authority and calibrated citation measurement
+7. crawler policy, runtime telemetry, and drift detection
+
+The ownership boundary across the architecture, audit tooling, and product
+implementation is recorded in
+[portfolio-repository-map.md](./portfolio-repository-map.md).
 
 ## Design Rule
 

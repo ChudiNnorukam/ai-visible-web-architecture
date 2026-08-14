@@ -22,9 +22,45 @@ code_refs:
 related: [surface-contract, verification-discipline, naming-canonical-split, entity-and-authority-stack]
 parent_concepts: []
 child_concepts: []
-last_verified: 2026-05-02
+last_verified: 2026-05-06
 confidence: inferred
 ---
+
+## Pattern Version
+
+**v1.0.0** (2026-05-06).
+
+**State:** 3-layer pattern (retrieval-aware information design,
+machine-readable identity and discovery, agent-facing interface
+surfaces with explicit agent wayfinding). `Verified` for chudi.dev
+as the live case study; four off-site and audit chapters
+(`the-fifteen-check-audit`, `entity-authority-layer`,
+`backlink-and-off-page`, `agent-readiness-layer`) drafted as
+`Inferred`.
+
+**Next:** v2.0.0 when the entity-authority chapter exits `Inferred`
+and the off-site authority layer absorbs into the pattern as Layer 4.
+Per the Refresh policy below, when all four planned chapters are
+committed and ratified.
+
+**Version history:**
+
+- **v1.0.0** (2026-05-06). Initial version stamp. Layer 3 explicitly
+  encodes both agent-callable tool surfaces (WebMCP) and agent
+  wayfinding (URL hierarchy, `sitemap.xml`, semantic anchors) as two
+  coupled required elements (previously only WebMCP was named). Repo
+  thesis section added to README naming verified scope (chudi.dev
+  case study) and `Target` goal ("any website cite-first via these
+  layers"). Three starter principles drafted in
+  `docs/codex/PRINCIPLES.md` (P1 evidence-first, P2 reference-not-
+  execution, P3 WebMCP-is-positioning).
+
+Note on storage: this version metadata lives in the node body, not
+the frontmatter, because `tools/codex_verify.py:190 serialize_frontmatter()`
+only round-trips canonical schema fields and strips unknown ones on
+`--all` runs. Extending the verifier to preserve unknown frontmatter
+is queued as a tactical follow-up (see POA in the matching session
+ratify event in `~/.claude/decisions.jsonl`).
 
 ## What
 
@@ -52,9 +88,23 @@ canonicals that may not match operator intent.
 2. **Machine-readable identity and discovery.** llms.txt family, ai.txt,
    `.well-known/llms.json`, schema JSON-LD (Person / Organization /
    BlogPosting / Article), sitemap.xml. See `surface-contract`.
-3. **Agent-facing interface surfaces.** Documented WebMCP browser tools that
-   expose typed capabilities directly from the site so agents do not have
-   to screen-scrape.
+3. **Agent-facing interface surfaces.** Two coupled elements, both
+   required:
+
+   (a) **Agent-callable tool surfaces.** Documented WebMCP browser
+   tools (`navigator.modelContext.registerTool`) that expose typed
+   capabilities directly from the site so agents do not have to
+   screen-scrape. Per `webmcp-spec` (global), this is W3C Community
+   Group Draft positioning today, NOT a citation-ranking signal.
+
+   (b) **Agent wayfinding.** Predictable URL hierarchy, public
+   `sitemap.xml`, retrieval-oriented top-level routes (`/topics`,
+   `/start`, `/about`, per-topic hubs), semantic anchors and
+   breadcrumb schema. The information-architecture half of the
+   layer: how an agent that has DECIDED to use the site finds the
+   page it needs without screen-scraping. Verified against
+   chudi.dev's `/start`, `/topics`, `/about` routes per
+   `proof/verification-matrix.md`.
 
 ### What this pattern is NOT
 
@@ -96,7 +146,7 @@ External grounding (other repos in the operator's portfolio):
   implementation of the surface contract.
 - `chudi-blog/docs/codex/nodes/entity-graph.md`: chudi.dev's entity layer
   (Person + Organization + sameAs).
-- `citability-dev/docs/codex/nodes/avr-framework.md`: the 15-check audit
+- `citability-dev/docs/codex/nodes/avr-framework.md`: the AVR audit
   spec this pattern's verification layer aligns with.
 
 ## When-to-touch
@@ -126,7 +176,7 @@ Re-verify after:
 - Operator override of the layer count or definitions.
 - Quarterly check of whether the pattern has absorbed the planned
   evolution chapters (entity-authority, backlinks, agent-readiness,
-  15-check audit). When all four chapters are committed and ratified,
+  AVR audit). When all four chapters are committed and ratified,
   the pattern grows from 3 layers to 4 (the off-site / authority layer).
 
 Next refresh: 2026-08-01, or sooner on any whitepaper rewrite.

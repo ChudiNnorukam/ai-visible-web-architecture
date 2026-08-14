@@ -108,7 +108,7 @@ coverage + measurement, NOT more iteration on llms.txt-style on-site
 surfaces. Adding more surface-contract chapters without addressing
 off-page authority is doing the easy half of the work. The planned
 chapters (entity-authority + backlinks + agent-readiness +
-15-check audit) are the hard half.
+AVR audit) are the hard half.
 
 ### What chapters this node motivates
 
@@ -141,7 +141,7 @@ in other repos' codexes:
   catalyst node (Stripe ACP + Google WebMCP, Apr 2026).
 - `~/.claude/codex/nodes/cross-link-contract.md`: global 7 rules for
   the operator's surfaces.
-- `citability-dev/docs/codex/nodes/avr-framework.md`: 15-check spec.
+- `citability-dev/docs/codex/nodes/avr-framework.md`: AVR check list (CHECKS.md).
 - `citability-dev/docs/codex/nodes/agent-readiness-wedge.md`: 6-module
   audit.
 - `citability-dev/docs/codex/nodes/entity-authority.md`: citability

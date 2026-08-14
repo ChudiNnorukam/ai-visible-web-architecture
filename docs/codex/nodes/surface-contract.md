@@ -22,7 +22,7 @@ code_refs:
 related: [avr-pattern, verification-discipline, entity-and-authority-stack]
 parent_concepts: [avr-pattern]
 child_concepts: []
-last_verified: 2026-05-02
+last_verified: 2026-07-11
 confidence: inferred
 ---
 
@@ -52,9 +52,10 @@ request so claims and evidence stay aligned.
 
 ### Companion surfaces (not yet in the matrix but increasingly load-bearing)
 
-These belong to the contract per the AI Visibility Readiness 15-check
+These belong to the contract per the AI Visibility Readiness
 framework but are not yet enforced by this repo's verification layer.
-Expected to be added in the planned 15-check audit chapter:
+Expected to be added; the current check list is generated at
+`CHECKS.md` in the ai-visibility-readiness repo:
 
 - `robots.txt`: must not blanket-block AI crawlers (GPTBot, ClaudeBot,
   PerplexityBot, CCBot). Allow-list is the contract.

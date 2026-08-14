@@ -8,6 +8,67 @@ This repository documents how one public site is designed to work across three a
 - LLM retrieval and citation
 - AI agent interaction
 
+## Project Thesis and Verified Scope
+
+**Pattern version:** `v1.0.0` (2026-05-06). The 3-layer pattern with
+agent wayfinding made explicit in Layer 3. Versioned in
+[`docs/codex/nodes/avr-pattern.md`](./docs/codex/nodes/avr-pattern.md)
+frontmatter; v2.0.0 will land when the off-site authority chapter
+exits `Inferred` and absorbs into the pattern as Layer 4.
+
+This repository documents the architecture pattern that makes a website
+maximally cite-worthy by AI search engines and natively callable by AI
+agents. It is a reference doc, not the execution.
+
+**The goal** (`Target`): make any website the AI engines' first-pick
+citation source, clearly readable and retrievable, trusted, and
+natively agentic.
+
+**The verified scope** (`Verified`): the three on-site layers
+documented here are exercised by [chudi.dev](https://chudi.dev) as the
+live case study. Public EntityMap, crawler-policy, telemetry,
+cross-property, citation-receipt, and agent-action surfaces now also exercise
+parts of the surrounding operating architecture. The four off-site and audit chapters
+([AVR audit](./architecture/the-fifteen-check-audit.md),
+[entity authority](./architecture/entity-authority-layer.md),
+[backlinks and off-page](./architecture/backlink-and-off-page.md),
+[agent readiness](./architecture/agent-readiness-layer.md)) are
+assigned claim-level evidence labels: public behavior is `Verified`; causal
+ranking claims and unimplemented adopter guidance remain `Inferred`.
+
+**Two corrections to the goal worth surfacing** so adopters do not
+over-claim:
+
+1. **WebMCP is positioning, not a citation-ranking signal.** Per the
+   [W3C Web Machine Learning CG draft](https://webmachinelearning.github.io/webmcp/),
+   `navigator.modelContext` is a Community Group Draft, not a
+   Standards-Track document. No documented crawler indexes
+   `registerTool` declarations today. Production browser support is
+   Chrome 146+ Canary behind a flag; realistic broad availability is
+   2027+. WebMCP belongs in the agent-action surface (post-citation
+   commerce and interaction), not in the AI-citation pipeline.
+2. **The real moats live off-site.** A 2026-04-16 calibration
+   (recorded in
+   [`entity-and-authority-stack`](./docs/codex/nodes/entity-and-authority-stack.md))
+   found that referring domains, Bing index coverage, and citation
+   measurement are the load-bearing levers for actually being cited,
+   not more iteration on `llms.txt`-style on-site surfaces. The
+   on-site work documented here is necessary but not sufficient.
+
+**Where execution actually happens.** Adopters chasing the goal will
+do most of the leveraged work outside this repo:
+
+- the adopter's own site content, surfaces, and entity graph (the
+  live case study here is chudi.dev);
+- the adopter's off-site authority footprint (Wikipedia and Wikidata,
+  GitHub, LinkedIn, Medium with reciprocal `sameAs` and canonical
+  links);
+- a measurement pipeline ([citability.dev](https://citability.dev) is
+  one productized audit that consumes the AVR framework).
+
+This repo's own job is to make the **pattern** clearly cite-worthy as
+a reference, not to ship the moat for any specific site.
+
 ## Status
 
 - Maintenance: active
@@ -49,7 +110,7 @@ acronym does NOT expand to anything else in this portfolio.
 |---|---|---|
 | AVR (acronym) | across the portfolio | "AI Visibility Readiness" (the framework name) |
 | AI-Visible Web Architecture | this repo | the 3-layer pattern (this document) |
-| AI Visibility Readiness Framework | [`ChudiNnorukam/ai-visibility-readiness`](https://github.com/ChudiNnorukam/ai-visibility-readiness) | the 15-check tiered audit (Tier 1 SEO Foundation, Tier 2 AI Infrastructure, Tier 3 Citation Monitoring) |
+| AI Visibility Readiness Framework | [`ChudiNnorukam/ai-visibility-readiness`](https://github.com/ChudiNnorukam/ai-visibility-readiness) | the tiered audit (Tier 1 SEO Foundation, Tier 2 AI Infrastructure, Tier 3 Citation Monitoring); the check list is generated at [`CHECKS.md`](https://github.com/ChudiNnorukam/ai-visibility-readiness/blob/main/CHECKS.md) |
 | AVR Score | [citability.dev](https://citability.dev) | the framework's 0-100 numeric output rolling up V/R/C across LLM engines |
 | VRC | citability.dev | the score's component axes (Visibility, Recommendability, Citability) |
 | Agent Readiness | citability.dev (parallel wedge) | preparation for agent-action and agent-commerce surfaces (Stripe ACP + Google WebMCP) |
@@ -84,6 +145,8 @@ These posts document patterns from this architecture applied to a production sys
 
 ## Architecture Map
 
+- [Portfolio Repository Map](./architecture/portfolio-repository-map.md) — canonical ownership, consolidation, and retirement map
+
 ### Verified system views
 
 - [Verified Surface Architecture](./architecture/verified-surface-architecture.md)
@@ -104,7 +167,7 @@ does not, by itself, supply. They remain `Inferred` until adopters
 exercise them in practice (most claims are reasoned from primary
 sources rather than measured against a verifiable surface).
 
-- [The 15-Check Audit (AI Visibility Readiness)](./architecture/the-fifteen-check-audit.md)
+- [The AVR Audit (AI Visibility Readiness)](./architecture/the-fifteen-check-audit.md)
 - [Entity Authority Layer](./architecture/entity-authority-layer.md)
 - [Backlinks and Off-Page Authority](./architecture/backlink-and-off-page.md)
 - [Agent Readiness Layer](./architecture/agent-readiness-layer.md)
