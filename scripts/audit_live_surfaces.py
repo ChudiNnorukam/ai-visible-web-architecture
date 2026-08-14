@@ -123,6 +123,13 @@ EXPECTED_WEBMCP_MARKERS = (
     "getAuthorContext",
 )
 
+EXPECTED_AI_CRAWLER_ALLOWS = (
+    "GPTBot",
+    "ClaudeBot",
+    "PerplexityBot",
+    "CCBot",
+)
+
 RESULTS: list[dict[str, object]] = []
 
 
@@ -269,6 +276,64 @@ def ensure_webmcp_proof_contract() -> None:
     record("webmcp proof markers", not missing, detail, url)
 
 
+def ensure_robots_txt_ai_crawler_allowlist() -> None:
+    """Verify robots.txt explicitly allows the named AI crawlers per the
+    allow-list contract (entity-and-authority-stack node). Two assertions:
+    (1) User-agent: * does NOT blanket-block via Disallow: /; (2) each
+    named AI crawler has an explicit User-agent block with Allow: / and
+    no Disallow: /.
+    """
+    url = f"{BASE_URL}/robots.txt"
+    _, _, body = fetch(url)
+    text = body.decode("utf-8", errors="replace")
+
+    sections: dict[str, list[str]] = {}
+    current: str | None = None
+    for raw_line in text.splitlines():
+        line = raw_line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        lower = line.lower()
+        if lower.startswith("user-agent:"):
+            current = line.split(":", 1)[1].strip()
+            sections.setdefault(current, [])
+            continue
+        if current is not None:
+            sections[current].append(line)
+
+    def has_rule(rules: list[str], directive: str) -> bool:
+        target = f"{directive}:/".lower()
+        return any(rule.lower().replace(" ", "") == target for rule in rules)
+
+    errors: list[str] = []
+    star_rules = sections.get("*", [])
+    if has_rule(star_rules, "disallow"):
+        errors.append("User-agent: * has Disallow: / (blanket block)")
+
+    bot_problems: list[str] = []
+    for bot in EXPECTED_AI_CRAWLER_ALLOWS:
+        rules = sections.get(bot)
+        if rules is None:
+            bot_problems.append(f"{bot} (no User-agent block)")
+            continue
+        if has_rule(rules, "disallow"):
+            bot_problems.append(f"{bot} (Disallow: / present)")
+            continue
+        if not has_rule(rules, "allow"):
+            bot_problems.append(f"{bot} (no explicit Allow: /)")
+    if bot_problems:
+        errors.append(
+            f"AI crawlers without explicit Allow: /: {', '.join(bot_problems)}"
+        )
+
+    detail = (
+        f"all {len(EXPECTED_AI_CRAWLER_ALLOWS)} named AI crawlers explicitly allowed; no blanket block"
+        if not errors
+        else "; ".join(errors)
+    )
+    record("robots.txt AI-crawler allow-list", not errors, detail, url)
+
+
 def write_json_report(path: str) -> None:
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
@@ -298,6 +363,7 @@ def main() -> int:
     ensure_llms_json_contract()
     ensure_sitemap_contract()
     ensure_webmcp_proof_contract()
+    ensure_robots_txt_ai_crawler_allowlist()
     if args.json_out:
         write_json_report(args.json_out)
     failures = sum(1 for item in RESULTS if not item["ok"])
